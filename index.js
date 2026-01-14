@@ -7,7 +7,7 @@ const dbName = process.env.DATABASE_NAME;
 
 
 app.get('/',(req,res)=>{
-res.send(`Hello World'+${dbName}`)
+res.send(`database name:${dbName},database url:${database}`)
 })
 app.get('/get',(req,res)=>{
     res.send(`Database url:${database}, database name: ${dbName}`)
